@@ -9,7 +9,7 @@ speech recognition string communication using voce and zmq
 
 ## Build
 1. Install jdk and jre for Windows x86, add the followings to the PATH environment variable:
-** `<jre_dir>/bin/client`
-** `<jdk_dir>/bin`
+ * `<jre_dir>/bin/client`
+ * `<jdk_dir>/bin`
 2. Download `voce`
 3. Download and build `libzmq`, copy `zmq.h`, `zmq.hpp`, `libzmq.lib` to `/lib`, `libzmq.dll` to `/bin`.
