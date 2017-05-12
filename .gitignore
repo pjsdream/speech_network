@@ -27,3 +27,13 @@
 *.exe
 *.out
 *.app
+
+# Intermediate files, output files and dependencies
+bin/
+lib/
+
+# VS
+vs/.vs
+vs/*.VC.*
+vs/Debug
+vs/Release
