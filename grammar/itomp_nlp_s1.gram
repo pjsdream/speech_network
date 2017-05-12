@@ -1,0 +1,15 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Digits Grammar file
+ */
+
+grammar itomp_nlp_s1;
+
+public <command> = <pickup>;
+
+<pickup> = pick up <article> <object>;
+
+<article> = (a | an | the);
+<object> = (<color> | <NULL>) (can | soda can);
+<color> = (red | blue);

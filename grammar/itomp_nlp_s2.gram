@@ -1,0 +1,18 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Digits Grammar file
+ */
+
+grammar itomp_nlp_s2;
+
+public <command> = <placecommand> | <dont> <placecommand> | <stop>;
+
+<stop> = stop;
+
+<placecommand> = <placeverb> <object> <placeto>;
+<dont> = don't;
+
+<placeverb> = place | put | move;
+<object> = it | the can;
+<placeto> = there | on the table | on the laptop;

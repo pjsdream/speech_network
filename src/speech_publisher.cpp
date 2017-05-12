@@ -11,7 +11,7 @@ SpeechPublisher::SpeechPublisher()
     , zmq_publisher_(zmq_context_, ZMQ_PUB)
 {
     // voce
-	voce::init("C:\\lib\\voce-0.9.1\\lib", false, true, "../grammar", "digits");
+	voce::init("C:\\lib\\voce-0.9.1\\lib", true, true, "../grammar", "itomp_nlp_s2");
 
     // network
     zmq_publisher_.bind("tcp://*:54322");
@@ -35,6 +35,7 @@ void SpeechPublisher::run()
             string = voce::popRecognizedString();
 
             printf("You said: %s\n", string.c_str());
+            voce::synthesize(string);
 
             // publish string
             zmq::message_t message(string.size());

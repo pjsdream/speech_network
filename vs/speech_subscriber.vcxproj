@@ -161,6 +161,11 @@
   <ItemGroup>
     <ClInclude Include="..\include\speech_network\speech_publisher.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\grammar\digits.gram" />
+    <None Include="..\grammar\itomp_nlp_s1.gram" />
+    <None Include="..\grammar\itomp_nlp_s2.gram" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
